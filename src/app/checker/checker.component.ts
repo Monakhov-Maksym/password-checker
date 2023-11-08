@@ -69,16 +69,16 @@ export class CheckerComponent {
       colorCount[color]++;
     });
     console.log(colorCount);
-    // Убедимся, что нет ни одного красного индикатора и хотя бы один зеленый и один желтый
+
     if (colorCount.green === 4) {
-      console.log('strong'); // Все критерии хорошие
+      console.log('strong');
     } else if (colorCount.green >= 2 && colorCount.red <= 1) {
-      console.log('medium'); // Минимум два зеленых и не более одного красного
+      console.log('medium');
     } else if (colorCount.red > 0 || colorCount.gray > 0) {
-      console.log('easy'); // Хотя бы один критерий красный или серый
+      console.log('easy');
     } else {
-      // Этот случай отлавливает все остальные возможные комбинации
-      console.log('undefined strength'); // Неопределенная сила, возможно, нужна дополнительная логика
+
+      console.log('undefined strength');
     }
   }
 }
