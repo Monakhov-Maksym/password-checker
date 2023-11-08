@@ -1,0 +1,20 @@
+<div class="password-checker-container">
+  <h1>Password Checker</h1>
+  <label for="passwordInput">Password</label>
+  <input type="password" id="passwordInput" (input)="onPasswordInput($event)"/>
+
+  <div class="strength-indicator">
+    <div class="indicator">
+      <div [style.background-color]="indicatorColor.length"></div>
+    </div>
+    <div class="indicator">
+      <div [style.background-color]="indicatorColor.letters"></div>
+    </div>
+    <div class="indicator">
+      <div [style.background-color]="indicatorColor.numbers"></div>
+    </div>
+    <div class="indicator">
+      <div [style.background-color]="indicatorColor.symbols"></div>
+    </div>
+  </div>
+</div>
