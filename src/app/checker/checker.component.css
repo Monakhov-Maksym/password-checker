@@ -1,28 +1,28 @@
 .password-checker-container {
-  text-align: center; /* Центрируем контейнер */
-  width: 100%; /* Задаем ширину, чтобы использовать всю доступную ширину */
+  text-align: center;
+  width: 100%;
 }
 
 .password-checker-container h1 {
-  margin-bottom: 20px; /* Добавляем отступ снизу для заголовка */
+  margin-bottom: 20px;
 }
 
 #passwordInput {
-  margin-bottom: 10px; /* Добавляем отступ снизу для поля ввода */
+  margin-bottom: 10px;
 }
 
 .strength-indicator {
   display: flex;
-  flex-direction: column; /* Элементы теперь будут располагаться вертикально */
-  align-items: center; /* Центрируем элементы */
+  width: 100%;
+  justify-content: center;
 }
 
 .indicator {
-  margin: 5px 0; /* Добавляем вертикальные отступы между индикаторами */
+  margin: 0 5px;
 }
 
 .indicator > div {
-  width: 100px; /* Увеличиваем ширину индикатора */
-  height: 20px; /* Увеличиваем высоту индикатора */
-  margin-bottom: 5px; /* Отступ между индикатором и текстом */
+  width: 40px;
+  height: 10px;
+  margin-bottom: 5px;
 }
